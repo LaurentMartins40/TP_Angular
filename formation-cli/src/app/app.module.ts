@@ -6,6 +6,7 @@ import { InterpolateComponent } from './interpolate/interpolate.component';
 import { InterpolateExtendComponent } from './interpolate-extends/interpolate-extend.component';
 import { InterpolateOptionalComponent } from './interpolate-optional/interpolate-optional.component';
 import { BindingComponent } from './binding/binding.component';
+import { EvenementComponent } from './evenement/evenement.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { BindingComponent } from './binding/binding.component';
     InterpolateExtendComponent,
     InterpolateOptionalComponent,
     BindingComponent,
+    EvenementComponent,
   ],
   imports: [
     BrowserModule

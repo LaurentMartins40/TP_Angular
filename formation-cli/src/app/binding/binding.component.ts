@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BindingComponent implements OnInit {
   isHidden: boolean = false;
-  red:string = "red";
+  public red:string = "red";
   constructor() { }
   ngOnInit() {
     setInterval(() => {
