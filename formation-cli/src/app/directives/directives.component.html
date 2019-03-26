@@ -1,0 +1,16 @@
+<ng-template [ngIf]="isDisplay">
+    <p>Formation Angular</p>
+</ng-template>
+<button (click)="fonction()">aff</button>
+
+<ul>
+    <li *ngFor="let formation of formations; index as i; first as f;last as l;odd as o">
+        <p [style.color]="getColorByElement(f,l)" [style.background-color]="getBackgroundByElement(o)">{{i}} - {{ formation.nom }}</p>
+    </li>
+</ul>
+
+<div [ngSwitch]="formations.length">
+    <p *ngSwitchCase="0">Aucune formation disponibles</p>
+    <p *ngSwitchCase="1">Une formation disponible : </p>
+    <p *ngSwitchDefault>Formations disponibles :</p>
+    </div>

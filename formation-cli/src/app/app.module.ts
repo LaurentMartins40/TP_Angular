@@ -8,6 +8,7 @@ import { InterpolateOptionalComponent } from './interpolate-optional/interpolate
 import { BindingComponent } from './binding/binding.component';
 import { EvenementComponent } from './evenement/evenement.component';
 import { VariableComponent } from './variable/variable.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { VariableComponent } from './variable/variable.component';
     BindingComponent,
     EvenementComponent,
     VariableComponent,
+    DirectivesComponent,
   ],
   imports: [
     BrowserModule
