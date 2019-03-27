@@ -11,6 +11,8 @@ import { VariableComponent } from './variable/variable.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { StyleComponent } from './style/style.component';
 import { FormationItemComponent } from './formation-item/formation-item.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { LifecycleOnchangeComponent } from './lifecycle-onchange/lifecycle-onchange.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { FormationItemComponent } from './formation-item/formation-item.componen
     DirectivesComponent,
     StyleComponent,
     FormationItemComponent,
+    LifecycleComponent,
+    LifecycleOnchangeComponent,
   ],
   imports: [
     BrowserModule
