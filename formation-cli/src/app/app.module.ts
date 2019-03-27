@@ -9,6 +9,7 @@ import { BindingComponent } from './binding/binding.component';
 import { EvenementComponent } from './evenement/evenement.component';
 import { VariableComponent } from './variable/variable.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { StyleComponent } from './style/style.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { DirectivesComponent } from './directives/directives.component';
     EvenementComponent,
     VariableComponent,
     DirectivesComponent,
+    StyleComponent,
   ],
   imports: [
     BrowserModule
