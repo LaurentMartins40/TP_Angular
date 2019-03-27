@@ -1,5 +1,6 @@
 <div>
-  <h4>{{formation?.nom}}</h4>
-  <p>{{formation?.description}}</p>
-  <p>{{formation?.prix}}</p>
+  <h4 (click)="selectFormation()" [ngClass]="{'textRed': isTextRed, 'textGreen': isTextGreen, 'backgroundGray': isBackgroundGray}">{{formation?.nom | titlecase:true }}</h4>
+  <p [ngClass]="{'textRed': isTextRed, 'textGreen': isTextGreen, 'backgroundGray': isBackgroundGray}">{{formation?.prix |currency: 'EUR'}}</p>
+  <p [ngClass]="{'textRed': isTextRed, 'textGreen': isTextGreen, 'backgroundGray': isBackgroundGray}">{{formation?.dateDebut | date:'dd/MM/yyyy'}}</p>
+  <p [ngClass]="{'textRed': isTextRed, 'textGreen': isTextGreen, 'backgroundGray': isBackgroundGray}">{{formation?.dateFin | date:'dd/MM/yyyy'}}</p>
   </div>

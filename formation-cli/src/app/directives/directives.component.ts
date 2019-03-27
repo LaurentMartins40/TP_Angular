@@ -17,12 +17,15 @@ export class DirectivesComponent implements OnInit {
   }
   ngOnInit() {
     this.formations = [
-      new Formation('Module Angular',10,new Date(2019,1,28),new Date(2019,4,17)),
-      new Formation('Module JavaScript',11,new Date(2019,1,28),new Date(2019,4,17)),
-      new Formation('Module TypeScript',12,new Date(2019,1,28),new Date(2019,4,17)),
+      new Formation('Module Angular',10,new Date(2019,0,28),new Date(2019,3,17)),
+      new Formation('Module JavaScript',11,new Date(2019,0,28),new Date(2019,3,17)),
+      new Formation('Module TypeScript',12,new Date(2019,0,28),new Date(2019,3,17)),
     ]
   }
   fonction() {
     this.isDisplay = !this.isDisplay
   }
+  handleFormationSelected(formation) {
+    alert(formation.nom);
+    }
 }

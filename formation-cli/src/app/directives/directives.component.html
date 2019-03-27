@@ -12,7 +12,7 @@
 
     </li>
     <li *ngFor="let formation of formations; index as i; first as f;last as l;odd as o">
-        <app-formation-item  [ngClass]="{'first': f, 'last': l, 'odd':o}" [formation]="formation"></app-formation-item>
+        <app-formation-item  [isTextRed]="f" [isTextGreen]="l" [isBackgroundGray]='o' [formation]="formation" (formationSelected)="handleFormationSelected($event)"></app-formation-item>
 </ul>
 
 <div [ngSwitch]="formations.length">
