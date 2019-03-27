@@ -10,6 +10,7 @@ import { EvenementComponent } from './evenement/evenement.component';
 import { VariableComponent } from './variable/variable.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { StyleComponent } from './style/style.component';
+import { FormationItemComponent } from './formation-item/formation-item.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { StyleComponent } from './style/style.component';
     VariableComponent,
     DirectivesComponent,
     StyleComponent,
+    FormationItemComponent,
   ],
   imports: [
     BrowserModule
