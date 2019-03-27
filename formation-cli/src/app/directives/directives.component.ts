@@ -17,9 +17,9 @@ export class DirectivesComponent implements OnInit {
   }
   ngOnInit() {
     this.formations = [
-      new Formation('Module Angular'),
-      new Formation('Module JavaScript'),
-      new Formation('Module TypeScript'),
+      new Formation('Module Angular',10,new Date(2019,1,28),new Date(2019,4,17)),
+      new Formation('Module JavaScript',11,new Date(2019,1,28),new Date(2019,4,17)),
+      new Formation('Module TypeScript',12,new Date(2019,1,28),new Date(2019,4,17)),
     ]
   }
   fonction() {

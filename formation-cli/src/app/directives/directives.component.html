@@ -5,8 +5,10 @@
 
 <ul>
     <li *ngFor="let formation of formations; index as i; first as f;last as l;odd as o">
-        <p [style.color]="getColorByElement(f,l)" [style.background-color]="getBackgroundByElement(o)">{{i}} - {{ formation.nom }}</p>
-        <p [ngClass]="{'first': f, 'last': l, 'odd':o}">{{i}} - {{ formation.nom }} avec ngClass</p>
+        <p [ngClass]="{'first': f, 'last': l, 'odd':o}">{{i}} - {{ formation.nom | titlecase:true }} </p>
+        <p [ngClass]="{'first': f, 'last': l, 'odd':o}">prix : {{ formation?.prix |currency: 'EUR'}} </p>
+        <p [ngClass]="{'first': f, 'last': l, 'odd':o}">debut :{{ formation?.dateDebut | date:'dd/MM/yyyy'}}</p>
+        <p [ngClass]="{'first': f, 'last': l, 'odd':o}">fin :{{ formation?.dateFin | date:'dd/MM/yyyy'}}</p>
     </li>
 </ul>
 

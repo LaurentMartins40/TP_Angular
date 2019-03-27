@@ -8,7 +8,7 @@ import { Formation } from '../model/Formation';
 export class InterpolateExtendComponent implements OnInit {
     nom: string = 'Bewizyu'
     formationAngular: string = 'Module angular';
-    formation: Formation = new Formation('Module Angular', 'fghjkvghghgch,cghgjcgjgjvgjvjgg,jvbbj;vb;bnbn,bn,vbnvbn,,vbnvbnvbn,vn,vnvbnvn,');
+    formation: Formation = new Formation('Module Angular');
     getTitle(): string {
         return `Function: ${this.nom} => ${this.formationAngular} `
     }
